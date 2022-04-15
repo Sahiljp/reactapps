@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Menu from "./menuApi";
 import MenuCard from "./MenuCard";
 import NavBar from "./navBar";
-
+useEffect = () => {
+  document.title = "Restaurant";
+};
 const uniqueList = [
   ...new Set(
     Menu.map((curElement) => {
